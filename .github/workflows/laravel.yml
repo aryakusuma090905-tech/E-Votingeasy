@@ -29,11 +29,23 @@ jobs:
           extensions: mbstring, pdo, sqlite
           coverage: none
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+
+        with:
+          node-version: 20
+
       - name: Copy Environment File
         run: cp .env.example .env
 
       - name: Install Composer Dependencies
         run: composer install --no-interaction --prefer-dist
+
+      - name: Install NPM Dependencies
+        run: npm install
+
+      - name: Build Vite Assets
+        run: npm run build
 
       - name: Generate Application Key
         run: php artisan key:generate
