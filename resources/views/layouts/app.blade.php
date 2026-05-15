@@ -14,11 +14,11 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.bunny.net">
 
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600,700,800,900&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600,700,800,900&display=swap" rel="stylesheet" />
 
     <!-- SCRIPTS -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link rel="stylesheet" href="/build/assets/app-7qFj7ucg.css">
+    <script type="module" src="/build/assets/app-DsIK1Lmc.js"></script>
 
 </head>
 
@@ -29,13 +29,11 @@
     <div class="fixed inset-0 -z-10 overflow-hidden">
 
         <!-- GRADIENT TOP -->
-        <div
-            class="absolute top-0 left-0 w-[500px] h-[500px] bg-indigo-600/20 rounded-full blur-3xl">
+        <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-indigo-600/20 rounded-full blur-3xl">
         </div>
 
         <!-- GRADIENT BOTTOM -->
-        <div
-            class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-3xl">
+        <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-3xl">
         </div>
 
         <!-- CENTER GLOW -->
@@ -58,14 +56,11 @@
         <!-- PAGE HEADER -->
         @isset($header)
 
-            <header
-                class="sticky top-0 z-20 backdrop-blur-xl bg-slate-900/70 border-b border-white/10 shadow-2xl">
+            <header class="sticky top-0 z-20 backdrop-blur-xl bg-slate-900/70 border-b border-white/10 shadow-2xl">
 
-                <div
-                    class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
 
-                    <div
-                        class="bg-white/5 border border-white/10 rounded-3xl px-6 py-5 shadow-2xl backdrop-blur-xl">
+                    <div class="bg-white/5 border border-white/10 rounded-3xl px-6 py-5 shadow-2xl backdrop-blur-xl">
 
                         {{ $header }}
 
